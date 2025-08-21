@@ -27,7 +27,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 
 				{children}
 
-				<footer>
+				<footer className={"bg-[#e4e4e4]"}>
 					<div className={"wrapper px-6 py-12 text-stone-400/90"}>
 						<div className={"flex flex-col md:flex-row md:justify-around gap-12"}>
 							{/* Logo */}

@@ -8,7 +8,7 @@ export default function Home() {
 				<div className={"bg-[#feeae3]/30 text-black border-black"}>
 					<div className={"wrapper flex flex-col md:flex-row"}>
 						<div className="relative w-full aspect-square flex-1/2">
-							<Image src={"/img1.jpg"} alt={"Sultry & Smart"} fill/>
+							<Image src={"./img1.jpg"} alt={"Sultry & Smart"} fill/>
 						</div>
 						<Link href={"/"} className={"bg-[#feeae3] flex flex-col flex-1/2 py-20 justify-center items-center gap-4 text-center"}>
 							<h2 className={"text-4xl spinnaker"}>Sultry & Smart</h2>
@@ -21,7 +21,7 @@ export default function Home() {
 				<div className={"bg-[#a3c7bd]/30 text-white border-white"}>
 					<div className={"wrapper flex flex-col md:flex-row-reverse"}>
 						<div className="relative w-full aspect-square flex-1/2">
-							<Image src={"/img2.jpg"} alt={"Elegant & Slick"} fill/>
+							<Image src={"./img2.jpg"} alt={"Elegant & Slick"} fill/>
 						</div>
 						<Link href={"/"} className={"bg-[#a3c7bd] flex flex-col flex-1/2 py-20 justify-center items-center gap-4 text-center"}>
 							<h2 className={"text-4xl spinnaker"}>Elegant & Slick</h2>
@@ -39,7 +39,7 @@ export default function Home() {
 					<div className={"grid md:grid-cols-3 gap-4 px-8 md:px-0"}>
 						<Link href={"/"} className={"bg-gray-300"}>
 							<div className="relative w-full object-cover">
-								<Image src={"/img3.jpg"} alt={"Pleated Skirt"} width={800} height={800} className={"w-full max-h-160 object-cover"}></Image>
+								<Image src={"./img3.jpg"} alt={"Pleated Skirt"} width={800} height={800} className={"w-full max-h-160 object-cover"}></Image>
 							</div>
 							<div className={"text-center py-4"}>
 								<p className={"uppercase text-lg"}>Pleated Skirt</p>
@@ -48,7 +48,7 @@ export default function Home() {
 						</Link>
 						<Link href={"/"} className={"bg-gray-300"}>
 							<div className="relative w-full object-cover">
-								<Image src={"/img4.jpg"} alt={"Slim fit chinos"} width={800} height={800} className={"w-full max-h-200 object-cover"}></Image>
+								<Image src={"./img4.jpg"} alt={"Slim fit chinos"} width={800} height={800} className={"w-full max-h-200 object-cover"}></Image>
 							</div>
 							<div className={"text-center py-4"}>
 								<p className={"uppercase text-lg"}>Slim fit chinos</p>
@@ -57,7 +57,7 @@ export default function Home() {
 						</Link>
 						<Link href={"/"} className={"bg-gray-300"}>
 							<div className="relative w-full object-cover">
-								<Image src={"/img5.jpg"} alt={"Printed chiffon dress"} width={800} height={800} className={"w-full max-h-200 object-cover"}></Image>
+								<Image src={"./img5.jpg"} alt={"Printed chiffon dress"} width={800} height={800} className={"w-full max-h-200 object-cover"}></Image>
 							</div>
 							<div className={"text-center py-4"}>
 								<p className={"uppercase text-lg"}>Printed chiffon dress</p>
@@ -82,14 +82,14 @@ export default function Home() {
 			<section className={"bg-dark text-white"}>
 				<div className={"wrapper grid md:grid-cols-2 gap-12 py-12 px-8 md:px-0"}>
 					<Link href={"/"} className={"grid w-full aspect-square"}>
-						<Image src={"/img6.jpg"} alt={"Accessories"} width={500} height={500} className={"col-span-full row-span-full w-full h-full"}/>
+						<Image src={"./img6.jpg"} alt={"Accessories"} width={500} height={500} className={"col-span-full row-span-full w-full h-full"}/>
 						<div className={"flex flex-col justify-center gap-4 text-center row-span-full col-span-full z-1"}>
 							<p className={"uppercase text-lg"}>Swoon-worthy</p>
 							<p className={"uppercase text-4xl"}>Accessories</p>
 						</div>
 					</Link>
 					<Link href={"/"} className={"grid w-full aspect-square"}>
-						<Image src={"/img7.jpg"} alt={"Winter sale"} width={500} height={500} className={"col-span-full row-span-full w-full h-full"}/>
+						<Image src={"./img7.jpg"} alt={"Winter sale"} width={500} height={500} className={"col-span-full row-span-full w-full h-full"}/>
 						<div className={"flex flex-col justify-center gap-4 text-center row-span-full col-span-full"}>
 							<p className={"uppercase text-lg"}>Winter sale</p>
 							<p className={"uppercase text-4xl"}>Now 30% off</p>
