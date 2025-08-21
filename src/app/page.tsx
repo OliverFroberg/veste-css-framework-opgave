@@ -1,103 +1,102 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+	return (
+		<main>
+			<section>
+				<div className={"bg-[#feeae3]/30 text-black border-black"}>
+					<div className={"wrapper flex flex-col md:flex-row"}>
+						<div className="relative w-full aspect-square flex-1/2">
+							<Image src={"/img1.jpg"} alt={"Sultry & Smart"} fill/>
+						</div>
+						<Link href={"/"} className={"bg-[#feeae3] flex flex-col flex-1/2 py-20 justify-center items-center gap-4 text-center"}>
+							<h2 className={"text-4xl spinnaker"}>Sultry & Smart</h2>
+							<p className={"text-2xl uppercase"}>Hot spring looks</p>
+							<div className={"border-b-4 w-14"}/>
+							<p className={"text-2xl"}>Shop Women</p>
+						</Link>
+					</div>
+				</div>
+				<div className={"bg-[#a3c7bd]/30 text-white border-white"}>
+					<div className={"wrapper flex flex-col md:flex-row-reverse"}>
+						<div className="relative w-full aspect-square flex-1/2">
+							<Image src={"/img2.jpg"} alt={"Elegant & Slick"} fill/>
+						</div>
+						<Link href={"/"} className={"bg-[#a3c7bd] flex flex-col flex-1/2 py-20 justify-center items-center gap-4 text-center"}>
+							<h2 className={"text-4xl spinnaker"}>Elegant & Slick</h2>
+							<p className={"text-2xl uppercase"}>Get ready for summer</p>
+							<div className={"border-b-4 w-14"}/>
+							<p className={"text-2xl"}>Shop Men</p>
+						</Link>
+					</div>
+				</div>
+			</section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+			<section>
+				<div className={"wrapper py-12"}>
+					<h2 className={"spinnaker text-3xl text-center mb-12"}>New arrivals</h2>
+					<div className={"grid md:grid-cols-3 gap-4 px-8 md:px-0"}>
+						<Link href={"/"} className={"bg-gray-300"}>
+							<div className="relative w-full object-cover">
+								<Image src={"/img3.jpg"} alt={"Pleated Skirt"} width={800} height={800} className={"w-full max-h-160 object-cover"}></Image>
+							</div>
+							<div className={"text-center py-4"}>
+								<p className={"uppercase text-lg"}>Pleated Skirt</p>
+								<p className={"pt-2"}>$49.00</p>
+							</div>
+						</Link>
+						<Link href={"/"} className={"bg-gray-300"}>
+							<div className="relative w-full object-cover">
+								<Image src={"/img4.jpg"} alt={"Slim fit chinos"} width={800} height={800} className={"w-full max-h-200 object-cover"}></Image>
+							</div>
+							<div className={"text-center py-4"}>
+								<p className={"uppercase text-lg"}>Slim fit chinos</p>
+								<p className={"pt-2"}>$45.00</p>
+							</div>
+						</Link>
+						<Link href={"/"} className={"bg-gray-300"}>
+							<div className="relative w-full object-cover">
+								<Image src={"/img5.jpg"} alt={"Printed chiffon dress"} width={800} height={800} className={"w-full max-h-200 object-cover"}></Image>
+							</div>
+							<div className={"text-center py-4"}>
+								<p className={"uppercase text-lg"}>Printed chiffon dress</p>
+								<p className={"pt-2"}>$120.00</p>
+							</div>
+						</Link>
+					</div>
+
+					<div className={"flex flex-col-reverse md:flex-col gap-8 text-center py-12"}>
+						<div>
+							<h2 className={"text-2xl spinnaker"}>Get on the list</h2>
+							<p className={"text-lg"}>and be the first to shop new arrivals and exclusive promotions.</p>
+						</div>
+						<form className={"flex flex-col gap-2 items-center px-6 md:w-100 mx-auto"}>
+							<input type={"email"} className={"border-1 border-gray-500 px-6 w-full text-sm h-12"} placeholder={"Enter your email here"}/>
+							<button type={"submit"} className={"bg-gray-500 text-white w-full text-lg h-12"}>Subscribe Now</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section className={"bg-dark text-white"}>
+				<div className={"wrapper grid md:grid-cols-2 gap-12 py-12 px-8 md:px-0"}>
+					<Link href={"/"} className={"grid w-full aspect-square"}>
+						<Image src={"/img6.jpg"} alt={"Accessories"} width={500} height={500} className={"col-span-full row-span-full w-full h-full"}/>
+						<div className={"flex flex-col justify-center gap-4 text-center row-span-full col-span-full z-1"}>
+							<p className={"uppercase text-lg"}>Swoon-worthy</p>
+							<p className={"uppercase text-4xl"}>Accessories</p>
+						</div>
+					</Link>
+					<Link href={"/"} className={"grid w-full aspect-square"}>
+						<Image src={"/img7.jpg"} alt={"Winter sale"} width={500} height={500} className={"col-span-full row-span-full w-full h-full"}/>
+						<div className={"flex flex-col justify-center gap-4 text-center row-span-full col-span-full"}>
+							<p className={"uppercase text-lg"}>Winter sale</p>
+							<p className={"uppercase text-4xl"}>Now 30% off</p>
+						</div>
+					</Link>
+				</div>
+			</section>
+		</main>
+	)
 }
