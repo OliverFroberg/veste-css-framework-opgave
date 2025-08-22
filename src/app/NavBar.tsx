@@ -10,7 +10,7 @@ export function NavBar() {
 	return (
 		<nav className={"wrapper p-6"}>
 			<div className={"flex items-center justify-between"}>
-				<Link href={"/"} className={"font-spinnaker tracking-[.4rem] text-2xl text-white"}>Veste</Link>
+				<Link href={"/"} className={"spinnaker text-2xl text-white"}>Veste</Link>
 
 				{/* Desktop links */}
 				<ul className={"hidden md:flex uppercase font-light items-center gap-8"}>
